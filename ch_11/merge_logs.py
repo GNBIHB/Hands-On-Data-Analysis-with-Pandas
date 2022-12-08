@@ -12,6 +12,7 @@ def cat_csvs(format_string_file_pattern, index_col, month_list):
     Returns:
         A concatenated pandas DataFrame
     """
+    a= 'giang'
     return pd.concat([
         pd.read_csv(
             format_string_file_pattern.format(file), index_col=index_col, parse_dates=True
